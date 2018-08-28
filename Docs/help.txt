@@ -1,0 +1,47 @@
+
+UMLDiagram(1)             User Manuals             UMLDiagram(1)
+
+
+NAME
+    UMLDiagram - Converts Python source code to Class Diagrams
+
+SYNOPSIS
+    main.py [COMMAND] [ARG1] [ARG2] [ARG3] ...
+          With no command specified the program will run in a
+          'shell' mode
+
+DESCRIPTION
+     The UMLDiagram package is used to parse Python code files
+     and output a UML class diagram
+
+COMMANDS
+     help [command_name]
+          Outputs the built in help text
+          Optional paramater [command_name]: will filter and show
+            only the command specified
+     input file_name [file_name2] [file_name3] ...
+          The input command is used to parse new Python files
+          into the program for evaluation
+
+OUTPUT FILES
+     ./plantuml.txt
+          The system will output a Plant UML dump before
+          converting it to a PNG file in the program's working
+          directory.
+     ./diagram.png
+          The system will generate the UML Diagram and save it as
+          diagram.png in the program's working directory.
+
+BUGS
+     - Python Parsing does not support relationships
+     - Methods and Attributes may be duplicated in the output
+
+AUTHOR
+     Brandon De Rose
+     Alex Wilson
+
+SEE ALSO
+     PlantUML - Python Package
+     http://plantuml.com/
+
+PR301               Last change: AUGUST 2018                    2
