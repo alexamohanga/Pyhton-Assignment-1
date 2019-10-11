@@ -6,25 +6,25 @@ class ClassTests(unittest.TestCase):
 
     # Alex
     def test_valid_file(self):
-        pyhton_parser = PythonParser()
+        python_parser = PythonParser()
 
-        validation_result = pyhton_parser.validate_python_file("../test_data/valid_class.py")
+        validation_result = python_parser.validate_python_file("../test_data/valid_class.py")
 
         self.assertTrue(validation_result)
 
     # Alex
     def test_invalid_file(self):
-        pyhton_parser = PythonParser()
+        python_parser = PythonParser()
 
-        validation_result = pyhton_parser.validate_python_file("../test_data/invalid_class.py")
+        validation_result = python_parser.validate_python_file("../test_data/invalid_class.py")
 
         self.assertFalse(validation_result)
 
     # Alex
     def test_wrong_file_path(self):
-        pyhton_parser = PythonParser()
+        python_parser = PythonParser()
 
-        validation_result = pyhton_parser.validate_python_file("../test_data/invalid_class__doesnt_exist.py")
+        validation_result = python_parser.validate_python_file("../test_data/invalid_class__doesnt_exist.py")
 
         self.assertFalse(validation_result)
 
